@@ -1,19 +1,14 @@
-// import "@nomicfoundation/hardhat-verify";
-import "@nomiclabs/hardhat-ethers";
-import "@nomicfoundation/hardhat-verify";
-import "@openzeppelin/hardhat-upgrades";
 import { HardhatUserConfig } from "hardhat/config";
-// import "@nomicfoundation/hardhat-toolbox";
+import "@nomicfoundation/hardhat-toolbox";
 
-// import "@openzeppelin/hardhat-upgrades";
+import "@openzeppelin/hardhat-upgrades";
 import "@onmychain/hardhat-uniswap-v2-deploy-plugin";
+
 import * as dotenv from "dotenv";
-
-
 dotenv.config();
 
-const MAINNET_KEY = process.env.MAINNET_KEY || "";
 const MAINNET_TEST_KEY = process.env.MAINNET_TEST_KEY || "";
+const MAINNET_KEY = process.env.MAINNET_KEY || "";
 
 
 const config: HardhatUserConfig = {
